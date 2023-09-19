@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+
+
+<body>
+    <div class="bx">
+
+        <div class="details">
+
+            <div class="img">
+                <img src="<%= data.icon %>"  alt="">
+            </div>
+            
+            <p id="temp">
+                <%= data.temp %> °c
+            </p>
+            
+            <p id="city"> <%= data.city %> </p>
+        </div>
+
+        <div class="minor_details">
+
+            <div class="sec">
+
+                <div class="img">
+                    <i id="icon" class="fa fa-dropbox"></i>
+                </div>
+
+                <div class="in_txt">
+                    <h3><%= data.hummidity %>%</h3> 
+                    <p>Hummidity</p>
+                </div>
+
+            </div>
+
+            <div class="sec">
+
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+
+                <div class="in_txt">
+                    <h3><span><%= data.windSpeed %>km/h</span></h3> 
+                    <p>Wind Speed</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="./index.js"></script>
+</html>
