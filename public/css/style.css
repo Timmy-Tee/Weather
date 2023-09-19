@@ -118,3 +118,14 @@ body{
 .minor_details .sec .in_txt h3{
     font-size: 26px;
 }
+
+
+
+
+
+@media (max-width: 950px){
+    .bx{
+        flex-basis: 90%;
+    }
+    
+}
